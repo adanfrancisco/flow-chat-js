@@ -6,7 +6,7 @@
     // override options with user preferences
 
     var settings = $.extend({
-      delay: 1500,
+      delay: 500,
       startButtonId: '#startButton',
       autoStart: true,
       startMessageId: 1,
@@ -103,13 +103,13 @@
   function generateMessageHTML(container, messages, m, delay) {
 
     // create template if text is not null
-    console.log(m.imageUrl);
-    if(m.imageUrl != '')
-      var $template = $('<li class="bot"><div class="text">' + '<img src="' + m.imageUrl + '"><br/>' + m.text + '</div></li>');
-    else if(m.text != null)
+    console.log('imagen: ',m.imageUrl);
+    // if(m.imageUrl != '')
+    //   var $template = $('<li class="bot"><div class="text">' + '<img src="' + m.imageUrl + '"><br/>' + m.text + '</div></li>');
+    // else if(m.text != null)
       var $template = $('<li class="bot"><div class="text">'+ m.text +'</div></li>');
-    else
-      var $template = $('');
+    // else
+    //   var $template = $('');
 
     toggleLoader("show", container);
 

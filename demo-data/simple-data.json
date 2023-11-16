@@ -13,6 +13,7 @@
     "id": 2,
     "text": "Esto es de MAD, desea informacion?",
     "messageType": "Question",
+    "imageUrl": "",
     "nextMessageId": "",
     "option1": "SI",
     "option1_nextMessageId": 4,
